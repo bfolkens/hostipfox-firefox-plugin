@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:chrome="http://www.mozilla.org/rdf/chrome#">
+
+	<RDF:Seq RDF:about="urn:mozilla:package:root">
+		<RDF:li RDF:resource="urn:mozilla:package:hostipfox"/>
+	</RDF:Seq>
+
+	<RDF:Description RDF:about="urn:mozilla:package:hostipfox"
+		chrome:displayName="Hostip.info Geolocation 0.1"
+		chrome:author="Brad Folkens"
+		chrome:authorURL="mailto:brad@hostip.info"
+		chrome:name="hostipfox"
+		chrome:extension="true"
+		chrome:description="Displays Geolocation information for a website using hostip.info data.">
+	</RDF:Description>
+
+	<!-- overlay information -->
+	<RDF:Seq about="urn:mozilla:overlays">
+		<RDF:li resource="chrome://navigator/content/navigatorOverlay.xul"/>
+		<RDF:li resource="chrome://multiviews/content/navigatorOverlay.xul"/>
+		<RDF:li resource="chrome://browser/content/browser.xul"/>
+	</RDF:Seq>
+
+	<RDF:Seq about="chrome://navigator/content/navigatorOverlay.xul">
+		<RDF:li>chrome://hostipfox/content/hostipfoxOverlay.xul</RDF:li>
+	</RDF:Seq>
+	<RDF:Seq about="chrome://multiviews/content/navigatorOverlay.xul">
+		<RDF:li>chrome://hostipfox/content/hostipfoxOverlay.xul</RDF:li>
+	</RDF:Seq>
+	<RDF:Seq about="chrome://browser/content/browser.xul">
+		<RDF:li>chrome://hostipfox/content/hostipfoxOverlay.xul</RDF:li>
+	</RDF:Seq>
+
+</RDF:RDF>
