@@ -7,7 +7,7 @@ xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 
 		<em:id>{49eba0b5-0393-4e13-8cc4-06298a281c5d}</em:id>
 		<em:name>HostIP.info Geolocation Plugin</em:name>
-		<em:version>0.2</em:version>
+		<em:version>0.2.1</em:version>
 		<em:description>Displays Geolocation information for a website using hostip.info data.</em:description>
 		<em:creator>Brad Folkens</em:creator>
 		<em:homepageURL>http://www.hostip.info</em:homepageURL>

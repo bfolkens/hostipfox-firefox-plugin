@@ -40,30 +40,35 @@ function initHostipfox() {
 				}
 				else if (
 					!elem.ownerDocument.contentType.match(/^text\/html\//) &&
-					'href' in elem && elem.href
+					( ('href' in elem && elem.href) || ('src' in elem && elem.src) )
 					)
 				{
 					// We have a valid link (with href in it)
 					var url = elem.href;
-					if(url.length > 50)
+
+					// ... or we have a src tag (img)
+					if(!url)
 					{
-						url = url.substring(0, 47) + '...';
+						url = elem.src;
 					}
 
-					if(elem.href.substring(0, 4) == 'http')
+					if(url)
 					{
-						var location = 'loading...';
-						var hostname = elem.hostname;
-						var ipaddr = java.net.InetAddress.getByName(hostname).getHostAddress();
+						if(url.length > 50)
+						{
+							url = url.substring(0, 47) + '...';
+						}
 
-						var tooltip = new Tooltip(url, hostname, ipaddr, location);
-						retval = tooltip.update();
-						tooltip.getLocation(ipaddr);
-					}
-					else
-					{
-						var tooltip = new Tooltip(url, null, null, null);
-						retval = tooltip.update();
+						if(url.substring(0, 4) == 'http')
+						{
+							var location = 'loading...';
+							var hostname = elem.hostname ? elem.hostname : Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService).newURI(url, null, null).host;
+							var ipaddr = java.net.InetAddress.getByName(hostname).getHostAddress();
+
+							var tooltip = new Tooltip(url, hostname, ipaddr, location);
+							retval = tooltip.update();
+							tooltip.getLocation(ipaddr);
+						}
 					}
 				}
 			}
@@ -76,7 +81,6 @@ function initHostipfox() {
 	};
 
 }
-window.addEventListener('load', initHostipfox, false);
 window.addEventListener('load', initHostipfox, false);
 
 function Tooltip(url, hostname, ipaddr, location)

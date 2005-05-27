@@ -1,0 +1,8 @@
+0.1		-  First release of firefox plugin.
+
+0.2		-  Fixed problems with install - upgraded versions that were 'allowed'.
+
+0.2.1		-	Changed some peculiarities, hoping it will speed some things up for some users.
+			-	Added support for 'src' tags (this was necessary for img elements especially).
+
+
