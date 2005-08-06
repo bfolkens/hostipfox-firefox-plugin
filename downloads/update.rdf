@@ -6,22 +6,22 @@
  <RDF:Description about="urn:mozilla:extension:{49eba0b5-0393-4e13-8cc4-06298a281c5d}">
  <em:updates> //Indicates the updates available
  <RDF:Seq>
- <RDF:li resource="urn:mozilla:extension:{49eba0b5-0393-4e13-8cc4-06298a281c5d}:0.2"/>
+ <RDF:li resource="urn:mozilla:extension:{49eba0b5-0393-4e13-8cc4-06298a281c5d}:0.2.1"/>
  </RDF:Seq>
  </em:updates>
- <em:version>0.2</em:version>//Used for compatibility with Firefox 0.9.x. 
+ <em:version>0.2.1</em:version>//Used for compatibility with Firefox 0.9.x. 
  <em:updateLink>http://www.hostip.info/firefox/hostipfox-testing.xpi</em:updateLink>
  </RDF:Description>
  
 //The details on the mentiond update, note the need of min/max values. 
-<RDF:Description about="urn:mozilla:extension:{49eba0b5-0393-4e13-8cc4-06298a281c5d}:0.2">
- <em:version>0.2</em:version>
+<RDF:Description about="urn:mozilla:extension:{49eba0b5-0393-4e13-8cc4-06298a281c5d}:0.2.1">
+ <em:version>0.2.1</em:version>
  <em:targetApplication>
  <Description>
  <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
  <em:minVersion>1.0</em:minVersion>
- <em:maxVersion>1.0</em:maxVersion>
- <em:updateLink>http://www.hostip.info/firefox/hostipfox-0.2.xpi</em:updateLink>
+ <em:maxVersion>1.5</em:maxVersion>
+ <em:updateLink>http://www.hostip.info/firefox/hostipfox-0.2.1.xpi</em:updateLink>
  </Description>
  </em:targetApplication>
  </RDF:Description>
