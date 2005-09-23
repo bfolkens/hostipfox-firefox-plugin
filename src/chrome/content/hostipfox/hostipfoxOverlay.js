@@ -6,6 +6,8 @@ function initHostipfox() {
 	var originalFillInHTMLTooltip = window.FillInHTMLTooltip;
 	window.__hostipfox__FillInHTMLTooltip = originalFillInHTMLTooltip;
 
+	const dnsService = Components.classes['@mozilla.org/network/dns-service;1'].getService(Components.interfaces.nsIDNSService)
+
 	const pref = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefService).getBranch(null);
 	const nsISupportsString = ('nsISupportsWString' in Components.interfaces) ? Components.interfaces.nsISupportsWString : Components.interfaces.nsISupportsString;
 
@@ -63,7 +65,7 @@ function initHostipfox() {
 						{
 							var location = 'loading...';
 							var hostname = elem.hostname ? elem.hostname : Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService).newURI(url, null, null).host;
-							var ipaddr = java.net.InetAddress.getByName(hostname).getHostAddress();
+							var ipaddr = dnsService.resolve(hostname, false).getNextAddrAsString();
 
 							var tooltip = new Tooltip(url, hostname, ipaddr, location);
 							retval = tooltip.update();

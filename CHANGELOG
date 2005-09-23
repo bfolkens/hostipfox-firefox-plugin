@@ -5,4 +5,6 @@
 0.2.1		-	Changed some peculiarities, hoping it will speed some things up for some users.
 			-	Added support for 'src' tags (this was necessary for img elements especially).
 
+0.3		-	Fixed issues with install.rdf (patch contributed by Matthew Walker <matthaeus123@gmail.com>)
+			-	Much faster response (not loading JVM this time) - for some reason was doing this with DNS lookups
 
