@@ -4,13 +4,13 @@
 xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 
 	<Description about="urn:mozilla:install-manifest">
-
 		<em:id>{49eba0b5-0393-4e13-8cc4-06298a281c5d}</em:id>
+		<em:version>0.3</em:version>
+		<em:type>2</em:type>
+		<em:homepageURL>http://www.hostip.info</em:homepageURL>
 		<em:name>HostIP.info Geolocation Plugin</em:name>
-		<em:version>0.2.1</em:version>
 		<em:description>Displays Geolocation information for a website using hostip.info data.</em:description>
 		<em:creator>Brad Folkens</em:creator>
-		<em:homepageURL>http://www.hostip.info</em:homepageURL>
 		<em:iconURL>chrome://hostipfox/skin/hostip_32x32.png</em:iconURL>
 		<em:aboutURL>chrome://hostipfox/content/about.xul</em:aboutURL>
 		<em:updateURL>http://www.hostip.info/firefox/update.rdf</em:updateURL>
@@ -25,11 +25,9 @@ xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 		<em:targetApplication>
 			<Description>
 				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-				<em:minVersion>1.0</em:minVersion>
-				<em:maxVersion>1.0+</em:maxVersion>
+				<em:minVersion>0.9</em:minVersion>
+				<em:maxVersion>1.4</em:maxVersion>	
 			</Description>
 		</em:targetApplication>
-
 	</Description>
-
 </RDF>
