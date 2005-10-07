@@ -12,7 +12,7 @@
 <groupbox align="center" orient="horizontal">
 <vbox>
   <text value="Hostip.info Geolocation" style="font-weight: bold; font-size: x-large;"/>
-  <text value="ver. 0.3"/>
+  <text value="ver. 0.3.1"/>
   <separator class="thin"/>
   <text value="Created By:" style="font-weight: bold;"/>
   <text value="Brad Folkens" class="url"
