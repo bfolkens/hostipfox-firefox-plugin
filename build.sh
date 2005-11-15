@@ -1,3 +1,3 @@
 #!/bin/sh
 
-ant && cp downloads/* ../../site/firefox
+ant && cp downloads/* /home/hostip/public_html/firefox
