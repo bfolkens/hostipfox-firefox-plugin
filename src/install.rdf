@@ -5,7 +5,7 @@
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
                    em:id="{49eba0b5-0393-4e13-8cc4-06298a281c5d}"
                    em:name="HostIP.info Geolocation Plugin"
-                   em:version="0.3.1"
+                   em:version="0.3.1.1"
                    em:creator="Brad Folkens"
                    em:description="Displays Geolocation information for a website using hostip.info data."
                    em:homepageURL="http://www.hostip.info"
@@ -23,7 +23,7 @@
   <RDF:Description RDF:about="rdf:#$4GjyQ3"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="0.9"
-                   em:maxVersion="1.4.1" />
+                   em:maxVersion="1.6" />
   <RDF:Description RDF:about="urn:mozilla:extension:file:hostipfox.jar"
                    em:skin="skin/classic/hostipfox/">
     <em:package>content/hostipfox/</em:package>
