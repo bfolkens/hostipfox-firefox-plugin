@@ -9,7 +9,7 @@
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
                    em:id="{49eba0b5-0393-4e13-8cc4-06298a281c5d}"
                    em:name="HostIP.info Geolocation Plugin"
-                   em:version="0.3.1.2"
+                   em:version="0.3.1.3"
                    em:creator="Brad Folkens"
                    em:description="Displays Geolocation information for a website using hostip.info data."
                    em:homepageURL="http://www.hostip.info"
