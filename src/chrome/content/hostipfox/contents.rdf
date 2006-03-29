@@ -8,7 +8,7 @@ xmlns:chrome="http://www.mozilla.org/rdf/chrome#">
 	</RDF:Seq>
 
 	<RDF:Description RDF:about="urn:mozilla:package:hostipfox"
-		chrome:displayName="Hostip.info Geolocation 0.3.1.1"
+		chrome:displayName="Hostip.info Geolocation 0.3.1.3"
 		chrome:author="Brad Folkens"
 		chrome:authorURL="mailto:brad@hostip.info"
 		chrome:name="hostipfox"
