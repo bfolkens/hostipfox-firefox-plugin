@@ -56,9 +56,9 @@ function initHostipfox() {
 
 					if(url)
 					{
-						if(url.length > 50)
+						if(url.length > 40)
 						{
-							url = url.substring(0, 47) + '...';
+							url = url.substring(0, 37) + '...';
 						}
 
 						if(url.substring(0, 4) == 'http')
