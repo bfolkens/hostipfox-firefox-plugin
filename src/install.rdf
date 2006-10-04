@@ -2,14 +2,14 @@
 <RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
          xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <RDF:Description RDF:about="rdf:#$DrH2i"
-                   em:id="{86c18b42-e466-45a9-ae7a-9b95ba6f5640}"
-                   em:minVersion="1.7"
-                   em:maxVersion="1.8" />
+<RDF:Description RDF:about="rdf:#$DrH2i"
+                   em:id="{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}"
+                   em:minVersion="1.0"
+                   em:maxVersion="1.5a" />
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
                    em:id="{49eba0b5-0393-4e13-8cc4-06298a281c5d}"
                    em:name="HostIP.info Geolocation Plugin"
-                   em:version="0.3.1.4"
+                   em:version="0.3.1.5"
                    em:creator="Brad Folkens"
                    em:description="Displays Geolocation information for a website using hostip.info data."
                    em:homepageURL="http://www.hostip.info"
@@ -23,7 +23,7 @@
   <RDF:Description RDF:about="rdf:#$CrH2i"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="1.0"
-                   em:maxVersion="3.0" />
+                   em:maxVersion="3.0a1" />
   <RDF:Description RDF:about="urn:mozilla:extension:file:hostipfox.jar"
                    em:skin="skin/classic/hostipfox/">
     <em:package>content/hostipfox/</em:package>
