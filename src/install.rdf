@@ -22,7 +22,7 @@
   <RDF:Description RDF:about="rdf:#$4w.9Y"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="1.0"
-                   em:maxVersion="3.0" />
+                   em:maxVersion="3.0a1" />
                    
                    <!-- Mozilla Suite -->
   <RDF:Description RDF:about="rdf:#$5w.9Y"
@@ -34,7 +34,7 @@
   <RDF:Description RDF:about="rdf:#$6w.9Y"
                    em:id="{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}"
                    em:minVersion="1.0"
-                   em:maxVersion="1.5a1" />
+                   em:maxVersion="1.5a" />
                    
                    <!-- Flock -->
   <RDF:Description RDF:about="rdf:#$7w.9Y"
