@@ -1,55 +1,50 @@
 <?xml version="1.0"?>
-<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
-
- <Description about="urn:mozilla:install-manifest">
-
-   <em:id>{49eba0b5-0393-4e13-8cc4-06298a281c5d}</em:id>
-   <em:name>HostIP.info Geolocation Plugin</em:name>
-   <em:version>0.3.1.5</em:version>
-   <em:description>Displays Geolocation information for a website using hostip.info data.</em:description>
-   <em:creator>Brad Folkens</em:creator>
-   <em:contributor>Matt Walker</em:contributor>
-
-   <em:homepageURL>http://www.hostip.info/</em:homepageURL>
-   <em:optionsURL>chrome://hostipfox/content/hostipfox/hostipfoxSettings.xul</em:optionsURL>
-   <em:iconURL>chrome://hostipfox/skin/hostip_32x32.png</em:iconURL>
-   <em:aboutURL>chrome://hostipfox/content/hostipfox/about.xul</em:aboutURL>
-
-   <!-- Firefox -->
-   <em:targetApplication>
-     <Description>
-       <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-       <em:minVersion>1.5</em:minVersion>
-       <em:maxVersion>3.0a1</em:maxVersion>
-     </Description>
-   </em:targetApplication>
-
-   <!-- Flock -->
-   <em:targetApplication>
-     <Description>
-       <em:id>{a463f10c-3994-11da-9945-000d60ca027b}</em:id>
-       <em:minVersion>0.5</em:minVersion>
-       <em:maxVersion>1.0</em:maxVersion>
-     </Description>
-   </em:targetApplication>
-
-   <!-- Mozilla -->
-   <em:targetApplication>
-     <Description>
-       <em:id>{86c18b42-e466-45a9-ae7a-9b95ba6f5640}</em:id>
-       <em:minVersion>1.7</em:minVersion>
-       <em:maxVersion>1.8</em:maxVersion>
-     </Description>
-   </em:targetApplication>
-
-   <!-- SeaMonkey -->
-   <em:targetApplication>
-     <Description>
-       <em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
-       <em:minVersion>1.0</em:minVersion>
-       <em:maxVersion>1.5a</em:maxVersion>
-     </Description>
-   </em:targetApplication>
-
- </Description>
-</RDF>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="urn:mozilla:install-manifest"
+                   em:id="{49eba0b5-0393-4e13-8cc4-06298a281c5d}"
+                   em:name="HostIP.info Geolocation Plugin"
+                   em:version="0.3.1.6"
+                   em:creator="Brad Folkens"
+                   em:description="Displays Geolocation information for a website using hostip.info data."
+                   em:homepageURL="http://www.hostip.info"
+                   em:iconURL="chrome://hostipfox/skin/hostip_32x32.png"
+                   em:aboutURL="chrome://hostipfox/content/about.xul"
+                   em:contributor="Matt Walker (lots of Minor fixes)">
+    <em:targetApplication RDF:resource="rdf:#$4w.9Y"/>    <!-- Firefox -->
+    <em:targetApplication RDF:resource="rdf:#$5w.9Y"/>    <!-- Mozilla Suite -->
+    <em:targetApplication RDF:resource="rdf:#$6w.9Y"/>    <!-- SeaMonkey -->
+    <em:targetApplication RDF:resource="rdf:#$7w.9Y"/>    <!-- Flock -->
+    <em:file RDF:resource="urn:mozilla:extension:file:hostipfox.jar"/>
+  </RDF:Description>
+  
+                    <!-- Firefox -->
+  <RDF:Description RDF:about="rdf:#$4w.9Y"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="1.0"
+                   em:maxVersion="3.0" />
+                   
+                   <!-- Mozilla Suite -->
+  <RDF:Description RDF:about="rdf:#$5w.9Y"
+                   em:id="{86c18b42-e466-45a9-ae7a-9b95ba6f5640}"
+                   em:minVersion="1.7"
+                   em:maxVersion="1.8" />
+                   
+                   <!-- SeaMonkey -->
+  <RDF:Description RDF:about="rdf:#$6w.9Y"
+                   em:id="{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}"
+                   em:minVersion="1.0"
+                   em:maxVersion="1.5a1" />
+                   
+                   <!-- Flock -->
+  <RDF:Description RDF:about="rdf:#$7w.9Y"
+                   em:id="{a463f10c-3994-11da-9945-000d60ca027b}"
+                   em:minVersion="0.5"
+                   em:maxVersion="1.0" />
+                   
+  <RDF:Description RDF:about="urn:mozilla:extension:file:hostipfox.jar"
+                   em:skin="skin/classic/hostipfox/">
+    <em:package>content/hostipfox/</em:package>
+    <em:package>content/hostipfoxBindings/</em:package>
+  </RDF:Description>
+</RDF:RDF>
