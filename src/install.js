@@ -6,7 +6,7 @@
 
 // Editable Items Begin
 var displayName         = "HostIP.info Geolocation Plugin"; // The name displayed to the user (don't include the version)
-var version             = "0.3.1.6";
+var version             = "0.4";
 var name                = "hostipfox"; // The leafname of the JAR file (without the .jar part)
 
 // The following three sets of variables tell this installer script how your
@@ -37,7 +37,7 @@ var disambiguatePrefs   = true;
 
 var jarName             = name + ".jar";
 //var jarFolder           = "content" + packageDir
-var jarFolders          = new Array( "content" + packageDir, "content" + "/hostipfoxBindings/" )
+var jarFolders          = new Array( "content" + packageDir )
 var error               = null;
 
 var folder              = getFolder("Profile", "chrome");

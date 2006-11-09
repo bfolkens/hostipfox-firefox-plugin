@@ -43,19 +43,25 @@
   <property name="src"        location="src"/>
   <property name="downloads"  location="downloads"/>
   <property name="comp"       value="nsHostipfox"/>
-  <property name="version"    value="0.3.1.6"/>
+  <property name="version"    value="0.4"/>
 
   <target name="init">  
     <!-- create the build directory structure used by compile -->
     <mkdir dir="${downloads}"/>	  
     <mkdir dir="${build}"/>
     <mkdir dir="${build}/chrome"/>
+    <mkdir dir="${build}/defaults"/>
   </target>
 	
   <target name="compile" depends="init">
     <!-- zip chrome directory -->  
     <zip destfile="${build}/chrome/${ant.project.name}.jar" basedir="${src}/chrome" compress="false"/> 
     
+    <!-- copy defaults -->
+    <copy todir="${build}/defaults">
+      <fileset dir="${src}/defaults"/>
+    </copy>
+
     <!-- copy install -->
     <copy todir="${build}">
       <fileset dir="${src}">

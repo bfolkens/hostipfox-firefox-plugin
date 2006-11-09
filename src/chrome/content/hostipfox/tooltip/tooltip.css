@@ -1,0 +1,19 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+
+tooltip
+{
+	-moz-binding: url("chrome://hostipfox/content/tooltip/tooltip.xul#tooltip") !important;
+}
+
+tooltip .tooltip-label[multiline="true"][value]
+{
+	visibility: hidden!important;
+}
+
+tooltip .tooltip-label[multiline="true"]
+{
+	max-width: none !important;
+	max-height: none !important;
+	white-space: -moz-pre-wrap !important;
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://hostipfox/content/options/options.css" type="text/css"?>
+
+<dialog buttons="accept, cancel"
+        id="hostipfox-options-dialog"
+        ondialogaccept="hostipfox_saveOptions()"
+				onload="hostipfox_initOptions()"
+        title="Hostip.info Options"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<script type="application/x-javascript" src="chrome://hostipfox/content/hostipfox.js"/>
+	<script type="application/x-javascript" src="chrome://hostipfox/content/options/options.js"/>
+
+  <vbox flex="1">
+    <groupbox>
+      <caption label="Display"/>
+      <vbox>       
+        <checkbox id="hostipfox.options.show_original" label="Original" />
+        <checkbox id="hostipfox.options.show_url" label="URL" />
+        <checkbox id="hostipfox.options.show_hostname" label="Hostname" />
+        <checkbox id="hostipfox.options.show_ipaddr" label="IP Address" />
+        <checkbox id="hostipfox.options.show_location" label="Location" />
+        <checkbox id="hostipfox.options.show_coords" label="Coordinates" />
+      </vbox>
+    </groupbox>
+<!--
+    <groupbox>
+      <caption label="Hostip.info"/>
+      <vbox>
+        <hbox align="center">
+          <label control="hostipfox.options.api_key.label" value="API Key"/> 
+					<textbox id="hostipfox.options.api_key" size="40"/>
+        </hbox>
+      </vbox>
+    </groupbox>
+-->
+  </vbox>  
+
+</dialog>

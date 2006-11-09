@@ -1,0 +1,29 @@
+@import url("chrome://global/skin/");
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+hbox > label
+{
+    margin-left: 0 !important;
+}
+
+spacer.large-spacer
+{
+    width: 20px !important;
+}
+
+spacer.small-spacer
+{
+    width: 10px !important;
+}
+
+.indent
+{
+    margin-left: 25px !important;
+}
+
+.scroll
+{
+    height: 25em !important;
+	overflow: auto !important;
+}
+

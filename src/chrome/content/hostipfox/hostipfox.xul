@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://hostipfox/content/tooltip/tooltip.css" type="text/css"?>
+
+<overlay id="hostipfox"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script type="application/x-javascript" src="chrome://hostipfox/content/tooltip/tooltip.js"/>
+<script type="application/x-javascript" src="chrome://hostipfox/content/hostipfox.js"/>
+<script type="application/x-javascript">
+	window.addEventListener('load', hostipfox_init, false);
+</script>
+
+</overlay>
+

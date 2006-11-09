@@ -18,3 +18,7 @@
 
 0.3.1.4		-  Changed overlay box so it's not as long.
 			-  Changed install.rdf and contents.rdf so that they would support Firefox 3.0a1 "Minefield".
+0.3.1.5		-  Mozilla Seamonkey support
+0.3.1.6		-	 Flock support
+0.3.1.7   -  XML tidy-up and more support for Mozilla SeaMonkey and Suite
+0.4-trunk	-	 Add support for hostip API keys and added options dialog.
