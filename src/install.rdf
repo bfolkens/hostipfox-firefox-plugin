@@ -1,56 +1,61 @@
 <?xml version="1.0"?>
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 	<Description about="urn:mozilla:install-manifest">
-	
+
 		<!-- Core Data -->
-    <em:id>{49eba0b5-0393-4e13-8cc4-06298a281c5d}</em:id>
-    <em:version>0.4</em:version>
+		<em:id>{49eba0b5-0393-4e13-8cc4-06298a281c5d}</em:id>
+		<em:version>0.4</em:version>
 
 		<!-- front-end metadata -->
-    <em:name>HostIP.info Geolocation Plugin</em:name>
-    <em:creator>Brad Folkens</em:creator>
-    <em:contributor>Matt Walker (lots of Minor fixes)</em:contributor>
-    <em:description>Displays Geolocation information for a website using hostip.info data.</em:description>
-    <em:homepageURL>http://www.hostip.info</em:homepageURL>
-    <em:iconURL>chrome://hostipfox/skin/hostip_32x32.png</em:iconURL>
-    <em:aboutURL>chrome://hostipfox/content/about/about.xul</em:aboutURL>
+		<em:name>HostIP.info Geolocation Plugin</em:name>
+		<em:creator>Brad Folkens</em:creator>
+		<em:contributor>Matt Walker (lots of Minor fixes)</em:contributor>
+		<em:description>Displays Geolocation information for a website using hostip.info data.</em:description>
+		<em:homepageURL>http://www.hostip.info</em:homepageURL>
+		<em:iconURL>chrome://hostipfox/skin/hostip_32x32.png</em:iconURL>
+		<em:aboutURL>chrome://hostipfox/content/about/about.xul</em:aboutURL>
 		<em:optionsURL>chrome://hostipfox/content/options/options.xul</em:optionsURL>
 
 		<!-- Application Data -->
-				   <!-- Firefox -->
-    <em:targetApplication>
-      <Description>
-        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-        <em:minVersion>1.0</em:minVersion>
-        <em:maxVersion>3.0a1</em:maxVersion>
-      </Description>
-    </em:targetApplication>
 
-                   <!-- SeaMonkey -->
-    <em:targetApplication>
-      <Description>
-        <em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
-        <em:minVersion>1.0</em:minVersion>
-        <em:maxVersion>1.5a</em:maxVersion>
-      </Description>
-    </em:targetApplication>
+			<!-- Firefox -->
+		<em:targetApplication>
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:minVersion>1.0</em:minVersion>
+				<em:maxVersion>3.0a1</em:maxVersion>
+			</Description>
+		</em:targetApplication>
 
-                   <!-- Flock -->
-    <em:targetApplication>
-      <Description>
-        <em:id>{a463f10c-3994-11da-9945-000d60ca027b}</em:id>
-        <em:minVersion>0.5</em:minVersion>
-        <em:maxVersion>1.0</em:maxVersion>
-      </Description>
-    </em:targetApplication>
+			<!-- SeaMonkey -->
+		<em:targetApplication>
+			<Description>
+				<em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
+				<em:minVersion>1.0</em:minVersion>
+				<em:maxVersion>1.5a</em:maxVersion>
+			</Description>
+		</em:targetApplication>
 
-		<!-- package files -->
+			<!-- Flock -->
+		<em:targetApplication>
+			<Description>
+				<em:id>{a463f10c-3994-11da-9945-000d60ca027b}</em:id>
+				<em:minVersion>0.5</em:minVersion>
+				<em:maxVersion>1.0</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+
+				<!-- package files: Skin, Data, Locales -->
 		<em:file>
 			<Description about="urn:mozilla:extension:file:hostipfox.jar">
 				<em:package>content/hostipfox/</em:package>
 				<em:skin>skin/classic/hostipfox/</em:skin>
+
+					<!-- Start of Locale List -->
+				<em:locale>locale/en-US/hostipfox/</em:locale>
+					<!-- End of Locale List -->
+
 			</Description>
 		</em:file>
-  </Description>
+	</Description>
 </RDF>
-
