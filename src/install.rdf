@@ -9,13 +9,12 @@
 		<!-- front-end metadata -->
     <em:name>HostIP.info Geolocation Plugin</em:name>
     <em:creator>Brad Folkens</em:creator>
-    <em:contributor>Matt Walker</em:contributor>
+    <em:contributor>Matt Walker (lots of Minor fixes)</em:contributor>
     <em:description>Displays Geolocation information for a website using hostip.info data.</em:description>
     <em:homepageURL>http://www.hostip.info</em:homepageURL>
     <em:iconURL>chrome://hostipfox/skin/hostip_32x32.png</em:iconURL>
     <em:aboutURL>chrome://hostipfox/content/about/about.xul</em:aboutURL>
 		<em:optionsURL>chrome://hostipfox/content/options/options.xul</em:optionsURL>
-    <em:contributor>Matt Walker (lots of Minor fixes)</em:contributor>
 
 		<!-- Application Data -->
 				   <!-- Firefox -->
