@@ -7,7 +7,7 @@ function hostipfox_initOptions() {
 	document.getElementById("hostipfox.options.show_ipaddr").checked = oPrefs.getBoolPref("hostipfox.options.show_ipaddr");
 	document.getElementById("hostipfox.options.show_location").checked = oPrefs.getBoolPref("hostipfox.options.show_location");
 	document.getElementById("hostipfox.options.show_coords").checked = oPrefs.getBoolPref("hostipfox.options.show_coords");
-	document.getElementById("hostipfox.options.api_key").value = oPrefs.getCharPref("hostipfox.options.api_key");
+//	document.getElementById("hostipfox.options.api_key").value = oPrefs.getCharPref("hostipfox.options.api_key");
 }
 
 function hostipfox_saveOptions() {
@@ -19,7 +19,7 @@ function hostipfox_saveOptions() {
 	oPrefs.setBoolPref("hostipfox.options.show_ipaddr", document.getElementById("hostipfox.options.show_ipaddr").checked);
 	oPrefs.setBoolPref("hostipfox.options.show_location", document.getElementById("hostipfox.options.show_location").checked);
 	oPrefs.setBoolPref("hostipfox.options.show_coords", document.getElementById("hostipfox.options.show_coords").checked);
-	oPrefs.setCharPref("hostipfox.options.api_key", document.getElementById("hostipfox.options.api_key").value);
+//	oPrefs.setCharPref("hostipfox.options.api_key", document.getElementById("hostipfox.options.api_key").value);
 	
 	return true;	
 }
