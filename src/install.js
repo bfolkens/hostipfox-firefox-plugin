@@ -23,7 +23,7 @@ var localeDir           = "/" + name + "/"
 
 var locales             = new Array(  ); // "en-US", "fr-FR", "de-DE"
 var skins               = new Array( "classic" ); // "modern"
-var prefs               = new Array(  ); // "hostipfox.js"
+var prefs		= new Array( "options.js" ); // "hostipfox.js"
 var components          = new Array(  );
 var searchPlugins       = new Array(  );
 
