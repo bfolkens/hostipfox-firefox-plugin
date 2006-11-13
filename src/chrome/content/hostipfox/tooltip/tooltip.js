@@ -10,22 +10,23 @@ function hostipfox_Tooltip(original, url, hostname, ipaddr, location, coords)
 	this.update = function()
 	{
 		const prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefService).getBranch(null);
+		var stringBundle = document.getElementById('hostipfox-string-bundle');
 		var content = [];
 
 		if(prefs.getBoolPref("hostipfox.options.show_url") && this.url != null)
-			content.push('URL: ' + this.url);
+			content.push(stringBundle.getString('url_label') + ': ' + this.url);
 
 		if(prefs.getBoolPref("hostipfox.options.show_hostname") && this.hostname != null)
-			content.push('Host: ' + this.hostname);
+			content.push(stringBundle.getString('host_label') + ': ' + this.hostname);
 
 		if(prefs.getBoolPref("hostipfox.options.show_ipaddr") && this.ipaddr != null)
-			content.push('IP: ' + this.ipaddr);
+			content.push(stringBundle.getString('ip_label') + ': ' + this.ipaddr);
 
 		if(prefs.getBoolPref("hostipfox.options.show_location") && this.location != null)
-			content.push('Location: ' + this.location);
+			content.push(stringBundle.getString('location_label') + ': ' + this.location);
 
 		if(prefs.getBoolPref("hostipfox.options.show_coords") && this.coords != null)
-			content.push('Coords: ' + this.coords);
+			content.push(stringBundle.getString('coords_label') + ': ' + this.coords);
 
 		var tooltipStr = content.length ? content.join('\n') : null;
 		if (tooltipStr)

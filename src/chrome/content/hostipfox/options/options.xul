@@ -1,11 +1,12 @@
 <?xml version="1.0"?>
 <?xml-stylesheet href="chrome://hostipfox/content/options/options.css" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://hostipfox/locale/options.dtd">
 
 <dialog buttons="accept, cancel"
         id="hostipfox-options-dialog"
         ondialogaccept="hostipfox_saveOptions()"
 				onload="hostipfox_initOptions()"
-        title="Hostip.info Options"
+        title="&title.label;"
         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
 	<script type="application/x-javascript" src="chrome://hostipfox/content/hostipfox.js"/>
@@ -13,14 +14,14 @@
 
   <vbox flex="1">
     <groupbox>
-      <caption label="Display"/>
+      <caption label="&caption.display.label;"/>
       <vbox>       
-        <checkbox id="hostipfox.options.show_original" label="Original" />
-        <checkbox id="hostipfox.options.show_url" label="URL" />
-        <checkbox id="hostipfox.options.show_hostname" label="Hostname" />
-        <checkbox id="hostipfox.options.show_ipaddr" label="IP Address" />
-        <checkbox id="hostipfox.options.show_location" label="Location" />
-        <checkbox id="hostipfox.options.show_coords" label="Coordinates" />
+        <checkbox id="hostipfox.options.show_original" label="&checkbox.show_original.text;" />
+        <checkbox id="hostipfox.options.show_url" label="&checkbox.show_url.text;" />
+        <checkbox id="hostipfox.options.show_hostname" label="&checkbox.show_hostname.text;" />
+        <checkbox id="hostipfox.options.show_ipaddr" label="&checkbox.show_ipaddr.text;" />
+        <checkbox id="hostipfox.options.show_location" label="&checkbox.show_location.text;" />
+        <checkbox id="hostipfox.options.show_coords" label="&checkbox.show_coords.text;" />
       </vbox>
     </groupbox>
 <!--
