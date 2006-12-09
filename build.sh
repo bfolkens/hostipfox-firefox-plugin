@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ant && cp downloads/* /home/hostip/public_html/firefox
+ant && cp -v downloads/* /home/hostip/public_html/firefox
