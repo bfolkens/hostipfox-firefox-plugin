@@ -4,7 +4,7 @@
 
 		<!-- Core Data -->
 		<em:id>{49eba0b5-0393-4e13-8cc4-06298a281c5d}</em:id>
-		<em:version>0.4.1</em:version>
+		<em:version>0.4.1.1</em:version>
 
 		<!-- front-end metadata -->
 		<em:name>HostIP.info Geolocation Plugin</em:name>
@@ -23,7 +23,7 @@
 			<Description>
 				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
 				<em:minVersion>1.0</em:minVersion>
-				<em:maxVersion>3.0a2</em:maxVersion>
+				<em:maxVersion>3.0a3</em:maxVersion>
 			</Description>
 		</em:targetApplication>
 
