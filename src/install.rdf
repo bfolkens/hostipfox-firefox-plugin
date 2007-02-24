@@ -52,8 +52,9 @@
 				<em:skin>skin/classic/hostipfox/</em:skin>
 
 					<!-- Start of Locale List -->
-				<em:locale>locale/en-US/hostipfox/</em:locale>
-				<em:locale>locale/de-DE/hostipfox/</em:locale>
+				<em:locale>locale/en-US/hostipfox/</em:locale> <!-- US - English -->
+				<em:locale>locale/de-DE/hostipfox/</em:locale> <!-- Germany - German -->
+				<em:locale>locale/da-DK/hostipfox/</em:locale> <!-- Denmark - Danish -->
 					<!-- End of Locale List -->
 			</Description>
 		</em:file>
