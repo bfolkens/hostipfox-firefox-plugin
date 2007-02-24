@@ -53,9 +53,10 @@
 
 					<!-- Start of Locale List -->
 				<em:locale>locale/en-US/hostipfox/</em:locale>
+				<em:locale>locale/de-DE/hostipfox/</em:locale>
 					<!-- End of Locale List -->
-
 			</Description>
 		</em:file>
+
 	</Description>
 </RDF>
