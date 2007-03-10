@@ -1,8 +1,8 @@
-<!ENTITY title.label "Hostip.info - Über">
-<!ENTITY header.text "Hostip.info Geoposition">
+<!ENTITY title.label "Hostip.info - "Om">
+<!ENTITY header.text "Hostip.info Geopositionen">
 <!ENTITY version.text "ver. 0.4.3">
-<!ENTITY creator.text "Autor:">
+<!ENTITY creator.text "ophav:">
 <!ENTITY author.text "Brad Folkens">
-<!ENTITY home_url.text "Hauptseite:">
-<!ENTITY close.label "Schließen">
+<!ENTITY home_url.text "Hjemmeside:">
+<!ENTITY close.label "Luk">
 
