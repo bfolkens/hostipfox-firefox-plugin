@@ -4,15 +4,15 @@
          xmlns:chrome="http://www.mozilla.org/rdf/chrome#">
 
 	<RDF:Seq RDF:about="urn:mozilla:locale:root">
-		<RDF:li RDF:resource="urn:mozilla:locale:en-US"/>
+		<RDF:li RDF:resource="urn:mozilla:locale:es-ES"/>
 	</RDF:Seq>
 
-	<RDF:Description RDF:about="urn:mozilla:locale:en-US"
-		chrome:displayName="English(US)"
-		chrome:name="en-US">
+	<RDF:Description RDF:about="urn:mozilla:locale:es-ES"
+		chrome:displayName="España(ES)"
+		chrome:name="es-ES">
         <chrome:packages>
-            <RDF:Seq about="urn:mozilla:locale:en-US:packages">
-                <RDF:li resource="urn:mozilla:locale:en-US:hostipfox"/>
+            <RDF:Seq about="urn:mozilla:locale:es-ES:packages">
+                <RDF:li resource="urn:mozilla:locale:es-ES:hostipfox"/>
             </RDF:Seq>
         </chrome:packages>
 	<RDF:Description />
