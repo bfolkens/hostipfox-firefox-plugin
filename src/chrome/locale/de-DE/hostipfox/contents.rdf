@@ -4,14 +4,14 @@
 
   <!-- list all the packages being supplied by this jar -->
   <RDF:Seq about="urn:mozilla:locale:root">
-    <RDF:li resource="urn:mozilla:locale:da-DK"/>
+    <RDF:li resource="urn:mozilla:locale:de-DE"/>
   </RDF:Seq>
 
   <!-- locale information -->
-  <RDF:Description about="urn:mozilla:locale:da-DK"  chrome:name="da-DK">
+  <RDF:Description about="urn:mozilla:locale:de-DE"  chrome:name="de-DE">
     <chrome:packages>
-      <RDF:Seq about="urn:mozilla:locale:da-DK:packages">
-        <RDF:li resource="urn:mozilla:locale:da-DK:forecastfox"/>
+      <RDF:Seq about="urn:mozilla:locale:de-DE:packages">
+        <RDF:li resource="urn:mozilla:locale:de-DE:hostipfox"/>
       </RDF:Seq>
     </chrome:packages>
   </RDF:Description>

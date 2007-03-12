@@ -1,10 +1,9 @@
-<!ENTITY title.label "Hostip.info - "Om">
-<!ENTITY caption.display.label "Skærm">
-<!ENTITY checkbox.show_original.text "Originalen">
+<!ENTITY title.label "Hostip.info - "Über">
+<!ENTITY caption.display.label "Anzeigen">
+<!ENTITY checkbox.show_original.text "Ursprünglich">
 <!ENTITY checkbox.show_url.text "URL">
-<!ENTITY checkbox.show_hostname.text "Hostnavn">
-<!ENTITY checkbox.show_ipaddr.text "IP-adresse">
-<!ENTITY checkbox.show_location.text "Lokalisering">
-<!ENTITY checkbox.show_coords.text "Sideordner">
-<!ENTITY close.label "Luk">
-
+<!ENTITY checkbox.show_hostname.text "Hostname">
+<!ENTITY checkbox.show_ipaddr.text "IP-Adresse">
+<!ENTITY checkbox.show_location.text "Position">
+<!ENTITY checkbox.show_coords.text "Koordinaten">
+<!ENTITY close.label "Schließen">
