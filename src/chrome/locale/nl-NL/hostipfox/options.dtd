@@ -1,0 +1,10 @@
+<!ENTITY title.label "Hostip.info opties">
+<!ENTITY caption.display.label "Weergave">
+<!ENTITY checkbox.show_original.text "Origineel">
+<!ENTITY checkbox.show_url.text "URL">
+<!ENTITY checkbox.show_hostname.text "Hostnaam">
+<!ENTITY checkbox.show_ipaddr.text "IP-adres">
+<!ENTITY checkbox.show_location.text "Lokatie">
+<!ENTITY checkbox.show_coords.text "Coördinaten">
+<!ENTITY close.label "Sluiten">
+
