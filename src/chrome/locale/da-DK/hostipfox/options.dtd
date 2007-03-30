@@ -1,0 +1,9 @@
+<!ENTITY title.label "Hostip.info - "Om">
+<!ENTITY caption.display.label "Skærm">
+<!ENTITY checkbox.show_original.text "Originalen">
+<!ENTITY checkbox.show_url.text "URL">
+<!ENTITY checkbox.show_hostname.text "Hostnavn">
+<!ENTITY checkbox.show_ipaddr.text "IP-adresse">
+<!ENTITY checkbox.show_location.text "Lokalisering">
+<!ENTITY checkbox.show_coords.text "Sideordner">
+<!ENTITY close.label "Luk">
