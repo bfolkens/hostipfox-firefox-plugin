@@ -1,0 +1,10 @@
+<!ENTITY title.label "Hostip.info - About">
+<!ENTITY caption.display.label "Display">
+<!ENTITY checkbox.show_original.text "Original">
+<!ENTITY checkbox.show_url.text "URL">
+<!ENTITY checkbox.show_hostname.text "Hostname">
+<!ENTITY checkbox.show_ipaddr.text "IP Address">
+<!ENTITY checkbox.show_location.text "Location">
+<!ENTITY checkbox.show_coords.text "Coordinates">
+<!ENTITY close.label "Close">
+
