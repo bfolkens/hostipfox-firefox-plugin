@@ -27,3 +27,4 @@
 0.4.1.1		- Bumped up max version for Firefox to support 3.0a3pre.
 0.4.3.1		- Cleaned up obsolete code
 					- Added support for more locales
+0.4.3.2		- Patch applied from fred@fr3d.org for showing title in box
