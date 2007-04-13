@@ -67,7 +67,20 @@ function hostipfox_init() {
 
 						if(url.substring(0, 4) == 'http')
 						{
-							var original = elem.label ? elem.label : elem.alt;
+							var original = '';
+							if (elem.title)
+							{
+								original = elem.title;
+							}
+							else if (elem.label)
+							{
+								original = elem.label;
+							}
+							else if (elem.alt)
+							{
+								original = elem.alt;
+							}
+
 							var hostname = elem.hostname ? elem.hostname : Components.classes["@mozilla.org/network/io-service;1"].getService(Components.interfaces.nsIIOService).newURI(url, null, null).host;
 							var ipaddr = dnsService.resolve(hostname, false).getNextAddrAsString();
 
