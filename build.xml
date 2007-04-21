@@ -43,7 +43,7 @@
   <property name="src"        location="src"/>
   <property name="downloads"  location="downloads"/>
   <property name="comp"       value="nsHostipfox"/>
-  <property name="version"    value="0.4.3.2"/>
+  <property name="version"    value="svn"/>
 
   <target name="init">  
     <!-- create the build directory structure used by compile -->
