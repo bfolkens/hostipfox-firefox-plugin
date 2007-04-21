@@ -8,7 +8,7 @@
 	</RDF:Seq>
 
 	<RDF:Description RDF:about="urn:mozilla:package:hostipfox"
-		chrome:displayName="Hostip.info Geolocation 0.4.3.2"
+		chrome:displayName="Hostip.info Geolocation 0.4.3.3"
 		chrome:author="Brad Folkens"
 		chrome:authorURL="mailto:brad@hostip.info"
 		chrome:name="hostipfox"
