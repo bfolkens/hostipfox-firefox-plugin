@@ -1,39 +1,15 @@
-0.1         - First release of firefox plugin.
+#!/bin/sh
 
-0.2		    - Fixed problems with install - upgraded versions that were 'allowed'.
+OLDVER=$1
+NEWVER=$2
+if [ $# -lt 2 ]; then
+	echo "Usage: $0 oldver_regex newver"
+	exit 255
+fi
 
-0.2.1		- Changed some peculiarities, hoping it will speed some things up for some users.
-			  - Added support for 'src' tags (this was necessary for img elements especially).
-
-0.3		    - Fixed issues with install.rdf (patch contributed by Matthew Walker <matthaeus123@gmail.com>)
-              - Much faster response (not loading JVM this time) - for some reason was doing this with DNS lookups
-
-0.3.1		- Updated install.rdf (another Matthew Walker production)
-
-0.3.1.1		- Updated install.rdf (so it will work with the new firefox 1.5 and deerpark 1.6a1)
-
-0.3.1.2		- Updated install.rdf (so it will work with the new Firefox 1.5.0.1, and Mozilla)
-
-0.3.1.3		- Updated install.rdf (so it will work with Firefox 2.0a1, and Bon Ocho)
-
-0.3.1.4		- Changed overlay box so it's not as long.
-			  - Changed install.rdf and contents.rdf so that they would support Firefox 3.0a1 "Minefield".
-
-0.3.1.5		- Mozilla Seamonkey support
-
-0.3.1.6		- Flock support
-
-0.3.1.7		- XML tidy-up and more support for Mozilla SeaMonkey and Suite
-
-0.4		    - Add support for hostip API keys and added options dialog.
-			  - Added locale support  
-
-0.4.1		- Fixed compatibility issues with Minefield 3.0a2.
-
-0.4.1.1		- Bumped up max version for Firefox to support 3.0a3pre.
-
-0.4.3.1		- Cleaned up obsolete code
-			  - Added support for more locales
-
-0.4.3.2		- Patch applied from fred@fr3d.org for showing title in box
-              - Broke extension usability.
+for fname in `grep -lR "${OLDVER}" ./ | grep -v "\.svn\|changever\.sh\|CHANGELOG\|\/downloads\/"`
+do
+	echo $fname
+	sed "s/${OLDVER}/${NEWVER}/g" $fname > $fname.new
+	mv -f $fname.new $fname
+done
