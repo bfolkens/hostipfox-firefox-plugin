@@ -39,7 +39,7 @@
       <Description>
         <em:id>{3db10fab-e461-4c80-8b97-957ad5f8ea47}</em:id>
         <em:minVersion>8.0</em:minVersion>
-        <em:maxVersion>8.1.2</em:maxVersion>
+        <em:maxVersion>8.1.3</em:maxVersion>
       </Description>
     </em:targetApplication>
     
@@ -56,7 +56,7 @@
     <em:name>HostIP.info Geolocation Plugin</em:name>
     <em:description>Displays Geolocation information for a website using hostip.info data.</em:description>
     <em:creator>Brad Folkens</em:creator>
-    <em:developer>Matt Walker</em:developer>
+    <em:developer>Matt Walker - Also made several locales</em:developer>
     <em:contributor>Guzman Braso - Spanish Locale</em:contributor>
     <em:homepageURL>http://www.hostip.info</em:homepageURL>
 
@@ -77,6 +77,7 @@
         <em:locale>locale/de-DE/hostipfox/</em:locale>
         <em:locale>locale/en-GB/hostipfox/</em:locale>
         <em:locale>locale/es-ES/hostipfox/</em:locale>
+        <em:locale>locale/es-MX/hostipfox/</em:locale>
         <em:locale>locale/nl-NL/hostipfox/</em:locale>
         <!-- end list of locales -->
 

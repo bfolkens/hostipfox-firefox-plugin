@@ -1,6 +1,6 @@
-
 overlay	chrome://navigator/content/navigator.xul	chrome://hostipfox/content/hostipfox.xul
-overlay	chrome://browser/content/browser.xul	chrome://hostipfox/content/hostipfox.xul
+overlay	chrome://browser/content/browser.xul        chrome://hostipfox/content/hostipfox.xul
+
 content	hostipfox	jar:chrome/hostipfox.jar!/content/hostipfox/
 
 skin	hostipfox	classic/1.0	jar:chrome/hostipfox.jar!/skin/classic/hostipfox/
@@ -8,6 +8,7 @@ skin	hostipfox	classic/1.0	jar:chrome/hostipfox.jar!/skin/classic/hostipfox/
 locale	hostipfox	en-US	jar:chrome/hostipfox.jar!/locale/en-US/hostipfox/
 locale	hostipfox	da-DK	jar:chrome/hostipfox.jar!/locale/da-DK/hostipfox/
 locale	hostipfox	de-DE	jar:chrome/hostipfox.jar!/locale/de-DE/hostipfox/
-locale	hostipfox	es-ES	jar:chrome/hostipfox.jar!/locale/es-ES/hostipfox/
 locale	hostipfox	en-GB	jar:chrome/hostipfox.jar!/locale/en-GB/hostipfox/
+locale	hostipfox	es-ES	jar:chrome/hostipfox.jar!/locale/es-ES/hostipfox/
+locale	hostipfox	es-ES	jar:chrome/hostipfox.jar!/locale/es-MX/hostipfox/
 locale	hostipfox	nl-NL	jar:chrome/hostipfox.jar!/locale/nl-NL/hostipfox/

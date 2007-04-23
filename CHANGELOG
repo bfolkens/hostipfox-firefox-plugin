@@ -36,4 +36,5 @@
 			- Added support for more locales
 
 0.4.3.2		- Patch applied from fred@fr3d.org for showing title in box
+
 0.4.3.3		- Fixed non-terminated XML in chrome (was causing problems with tooltip showing up)
