@@ -1,5 +1,5 @@
-<!ENTITY url.label "URL">
+﻿<!ENTITY url.label "URL">
 <!ENTITY host.label "Host">
 <!ENTITY ip.label "IP">
 <!ENTITY location.label "Position">
-<!ENTITY coords.label "Schlie�en">
+<!ENTITY coords.label "Schließen">
