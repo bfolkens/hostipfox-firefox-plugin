@@ -45,65 +45,14 @@ function hostipfox_Tooltip(original, url, hostname, ipaddr, location, coords)
 		return false;
 	};
 
-	this.getLocation = function(ipaddr)
+	this.refresh_location = function(ipaddr)
 	{
-		try
-		{
-			var oPrefs = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService).getBranch("");
-			var api_key = oPrefs.getCharPref("hostipfox.options.api_key")
-
-			var self = this;
-			var xmlHttp = new XMLHttpRequest();
-			var xmlUrl = 'http://api.hostip.info/?ip=' + ipaddr;
-
-			xmlHttp.open("GET", xmlUrl, true);
-			xmlHttp.setRequestHeader("X-Hostip-API-Version", "1.1");
-			xmlHttp.setRequestHeader("X-Hostip-API-Key", api_key);
-
-			xmlHttp.onreadystatechange=function()
-			{
-				if (xmlHttp.readyState==4)
-				{
-					xmlDoc = xmlHttp.responseXML;
-					self.location = '(unknown)';
-					self.coords = '(unknown)';
-
-					var gmlNS = "http://www.opengis.net/gml";
-					var hostipEl = xmlDoc.getElementsByTagName("Hostip").item(0);
-					var countryName = '';
-					var cityName = '';
-					for(i=0; i < hostipEl.childNodes.length; i++)
-					{
-						node = hostipEl.childNodes.item(i);
-						switch(node.nodeName)
-						{
-							case "countryAbbrev":
-								countryName = node.firstChild.nodeValue;
-							break;
-							case "gml:name":
-								cityName = node.firstChild.nodeValue;
-							break;
-							case "ipLocation":
-								self.coords = node.childNodes.item(1).childNodes.item(1).childNodes.item(1).firstChild.nodeValue;
-							break;
-						}
-					}
-
-					if(cityName != '')
-						self.location = cityName;
-
-					if(countryName != '')
-						self.location += ', ' + countryName;
-
-					self.update();
-				}
-			}
-			xmlHttp.send(null);
-		}
-		catch(e)
-		{
-			alert(e);
-		}
+	  var self = this;
+	  hostipfox_getLocation(ipaddr, function(hostip_response) {
+			self.location = hostip_response.location;
+			self.coords = hostip_response.coords;
+			self.update();
+	  });
 	};
 }
 

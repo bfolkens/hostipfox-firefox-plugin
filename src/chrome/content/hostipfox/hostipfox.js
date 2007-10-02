@@ -4,6 +4,69 @@ function hostipfox_enable() {
 function hostipfox_disable() {
 }
 
+function hostipfox_parse_response(xmlDoc) {
+	var location = '(unknown)';
+	var coords = '(unknown)';
+
+	var gmlNS = "http://www.opengis.net/gml";
+	var hostipEl = xmlDoc.getElementsByTagName("Hostip").item(0);
+	var countryName = '';
+	var cityName = '';
+	for(i=0; i < hostipEl.childNodes.length; i++)
+	{
+		node = hostipEl.childNodes.item(i);
+		switch(node.nodeName)
+		{
+			case "countryAbbrev":
+				countryName = node.firstChild.nodeValue;
+			break;
+			case "gml:name":
+				cityName = node.firstChild.nodeValue;
+			break;
+			case "ipLocation":
+				coords = node.childNodes.item(1).childNodes.item(1).childNodes.item(1).firstChild.nodeValue;
+			break;
+		}
+	}
+
+	if(cityName != '')
+		location = cityName;
+
+	if(countryName != '')
+		location += ', ' + countryName;
+		
+	return({ location: location, coords: coords, cityName: cityName, countryName: countryName });
+}
+
+function hostipfox_getLocation(ipaddr, update_function) {
+	try
+	{
+		var oPrefs = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService).getBranch("");
+		var api_key = oPrefs.getCharPref("hostipfox.options.api_key");
+
+		var xmlHttp = new XMLHttpRequest();
+		var xmlUrl = 'http://api.hostip.info/?ip=' + ipaddr;
+		
+		xmlHttp.open("GET", xmlUrl, true);
+		xmlHttp.setRequestHeader("X-Hostip-API-Version", "1.1");
+		xmlHttp.setRequestHeader("X-Hostip-API-Key", api_key);
+
+		xmlHttp.onreadystatechange=function()
+		{
+			if (xmlHttp.readyState==4)
+			{
+        var hostip_response = hostipfox_parse_response(xmlHttp.responseXML);
+      	update_function(hostip_response);
+			}
+		}
+		xmlHttp.send(null);
+	}
+	catch(e)
+	{
+		alert(e);
+	}
+}
+
 function hostipfox_init() {
 	if('__hostipfox__FillInHTMLTooltip' in window) return;
 	const prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefService).getBranch(null);
@@ -86,7 +149,7 @@ function hostipfox_init() {
 
 							var tooltip = new hostipfox_Tooltip(original, url, hostname, ipaddr, 'loading...');
 							retval = tooltip.update();
-							tooltip.getLocation(ipaddr);
+							tooltip.refresh_location(ipaddr);
 						}
 					}
 				}
