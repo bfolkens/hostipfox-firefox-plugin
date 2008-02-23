@@ -38,4 +38,6 @@
 0.4.3.2		- Patch applied from fred@fr3d.org for showing title in box
 
 0.4.3.3		- Fixed non-terminated XML in chrome (was causing problems with tooltip showing up)
+
 0.4.3.4         - Fixed incompatibility issue with latest trunk of Firefox 3.0b3pre
+0.4.3.5         - Fixed some typos. Fixed a minor problem with the es-MX locale.
