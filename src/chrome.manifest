@@ -12,3 +12,5 @@ locale	hostipfox	en-GB	jar:chrome/hostipfox.jar!/locale/en-GB/hostipfox/
 locale	hostipfox	es-ES	jar:chrome/hostipfox.jar!/locale/es-ES/hostipfox/
 locale	hostipfox	es-MX	jar:chrome/hostipfox.jar!/locale/es-MX/hostipfox/
 locale	hostipfox	nl-NL	jar:chrome/hostipfox.jar!/locale/nl-NL/hostipfox/
+locale	hostipfox	hu-HU	jar:chrome/hostipfox.jar!/locale/nl-NL/hostipfox/
+locale	hostipfox	en-AU	jar:chrome/hostipfox.jar!/locale/nl-NL/hostipfox/

@@ -5,14 +5,14 @@
      
   <Description about="urn:mozilla:install-manifest">
     <em:id>{49eba0b5-0393-4e13-8cc4-06298a281c5d}</em:id>
-    <em:version>0.4.3.5</em:version>
+    <em:version>0.4.3.8</em:version>
     
     <!-- Firefox -->
     <em:targetApplication>
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
         <em:minVersion>1.5</em:minVersion>
-        <em:maxVersion>3.0b3</em:maxVersion>
+        <em:maxVersion>3.0.*</em:maxVersion>
       </Description>
     </em:targetApplication>
    
@@ -58,6 +58,7 @@
     <em:creator>Brad Folkens</em:creator>
     <em:developer>Matt Walker - Also made several locales</em:developer>
     <em:contributor>Guzman Braso - Spanish Locale</em:contributor>
+    <em:contributor>Kriszti Szilágyi - Hungarian Locale</em:contributor>
     <em:homepageURL>http://www.hostip.info</em:homepageURL>
 
     <!-- Front End Integration Hooks (used by Extension Manager)-->
@@ -72,13 +73,15 @@
         <em:skin>skin/classic/hostipfox/</em:skin>
         
         <!-- begin list of locales -->
-        <em:locale>locale/en-US/hostipfox/</em:locale>
         <em:locale>locale/da-DK/hostipfox/</em:locale>
         <em:locale>locale/de-DE/hostipfox/</em:locale>
+        <em:locale>locale/en-AU/hostipfox/</em:locale>
         <em:locale>locale/en-GB/hostipfox/</em:locale>
+        <em:locale>locale/en-US/hostipfox/</em:locale>
         <em:locale>locale/es-ES/hostipfox/</em:locale>
         <em:locale>locale/es-MX/hostipfox/</em:locale>
-        <em:locale>locale/nl-NL/hostipfox/</em:locale>
+	<em:locale>locale/hu-HU/hostipfox/</em:locale>
+	<em:locale>locale/nl-NL/hostipfox/</em:locale>
         <!-- end list of locales -->
 
       </Description>
