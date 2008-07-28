@@ -1,0 +1,9 @@
+<!ENTITY title.label "Hostip.info - Erről">
+<!ENTITY caption.display.label "Megjelenés">
+<!ENTITY checkbox.show_original.text "Eredeti">
+<!ENTITY checkbox.show_url.text "URL">
+<!ENTITY checkbox.show_hostname.text "Host Név">
+<!ENTITY checkbox.show_ipaddr.text "IP Cím">
+<!ENTITY checkbox.show_location.text "Hely">
+<!ENTITY checkbox.show_coords.text "Koordináták">
+<!ENTITY close.label "Bezárás">
