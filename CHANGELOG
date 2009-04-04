@@ -40,8 +40,10 @@
 0.4.3.3		- Fixed non-terminated XML in chrome (was causing problems with tooltip showing up)
 
 0.4.3.4         - Fixed incompatibility issue with latest trunk of Firefox 3.0b3pre
-0.4.3.5         - Fixed some typos. Fixed a minor problem with the es-MX locale.
+0.4.3.5         - Fixed some typos. Fixed a minor problem with the es-MX locale.
 
 0.4.3.7         - Fixed incompatibility issue with latest trunk of Firefox 3.0.*
 
 0.4.3.8         - Added Hungarian Locale
+
+0.4.3.9         - Bumped up max version for Firefox and Flock.
